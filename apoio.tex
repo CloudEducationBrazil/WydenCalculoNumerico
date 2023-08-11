@@ -1,0 +1,343 @@
+-- Questões de Avaliação Interpolação
+https://www.ufrgs.br/reamat/CalculoNumerico/livro-py/i1-interpolacao_polinomial.html
+
+********************** x ******************
+
+-- Conversão Binária => Decimal e Decimal => Binária
+https://pt.calcuworld.com/calculadoras-matematicas/calculadora-binaria/
+
+-- Calculadora Binária
+https://calcuonline.com/calculadoras/calculadora-binaria/
+
+
+-- Calculador Octal
+https://miniwebtool.com/octal-calculator/
+
+
+-- Calculadora Hexa
+https://www.calculator.net/hex-calculator.html/
+
+
+-- Representação Binária e Complemento de 2 (Carry / Estouro de Bit)
+https://es.planetcalc.com/747/
+
+-- Complemento de 1 e 2
+https://medium.com/@jeanfelipemartinsdacosta/sinal-magnitude-bit-de-sinal-complemento-de-1-e-complemento-de-2-a1d32045ab18
+
+********************** x ******************
+
+-- Exercícios - Questões de Trapézio
+https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-trapezio.htm#questao-2
+
+-- Círculo
+https://mundoeducacao.bol.uol.com.br/matematica/circulo-circunferencia.htm
+
+C (comprimento) = 2πr, em que π é aproximadamente 3,14
+A (área) = π.r2
+
+EDO - Prod. Bruno (Pela Lista) Pelo portal em CN
+
+- Soma Hexa
+https://www.calculator.net/hex-calculator.html/
+https://miniwebtool.com/hex-calculator/?number1=D898&operate=1&number2=87
+
+-- Soma Octal
+https://miniwebtool.com/octal-calculator/
+
+https://calcuonline.com/calculadoras/calculadora-binaria/
+
+https://www.tudoengcivil.com.br/search/label/C%C3%A1lculo%20Num%C3%A9rico
+
+Aulas práticas / MatLab
+https://www.scilab.org/
+http://www.scilab.org/download/downthks?success=ok
+
+-- Indicar para os alunos / Várias Conversões / Soma / Subtração
+http://www.multicalculadora.com.br/
+
+-- Indicar para os alunos / Conversão Ponto Flutuante
+http://webcalc.com.br/Matematica/form/notacao_numerica
+Não IEE 754 https://carlosrafaelgn.com.br/aula/flutuante.html
+Não IEE 754 https://guiatech.net/ieee-754-conversao/
+
+http://www.calculadoraonline.com.br/calculadoras
+http://wims.unice.fr/wims/wims.cgi
+
+-- Conversão - medidas
+http://webcalc.com.br/Matematica/form/notacao\_numerica
+
+-- Complemento de 2
+http://carlosrafaelgn.com.br/Aula/Binario.html
+
+-- Complemento de 2; Estouro de Bit (Carry)
+-- Indicar para os alunos (Carry)
+https://es.planetcalc.com/747/
+
+https://pt.calcuworld.com/calculadoras-matematicas/calculadora-binaria/
+
+https://pt.wikibooks.org/wiki/Eletr%C3%B4nica_Digital/N%C3%BAmeros_bin%C3%A1rios_negativos
+
+Cursos de Matemática e Eletrônica
+https://www.youtube.com/channel/UCgzw2Y33TkduRWvaTF0BTEg/playlists
+
+Curso de Sistemas de Numeração
+https://www.youtube.com/watch?v=w8WgryYN4Ec&list=PLIHE326iMCHAXyNnBetAdlhZGb44C-eCx
+
+http://homes.dcc.ufba.br/~alirio/files/cn2012.1/Erros.pdf
+
+http://www.ebah.com.br/content/ABAAABBYYAB/calculo-numerico-modelagem-matematica?part=2
+
+http://www.ebah.com.br/content/ABAAABBYYAB/calculo-numerico-modelagem-matematica
+
+CN
+https://www.youtube.com/watch?v=qHNkK2GLToc&list=PLIHE326iMCHAKqaupMhTorHU4vd5rmrmi
+
+-- Interpolação Polinomial Inversa
+=> https://www.youtube.com/watch?v=oc348f3b9Zg
+
+https://www.mesalva.com/ensino-superior/engenharia
+
+EXERCÍCIOS EXTRA
+
+- Método de Gauss (Escalonamento), Jordan, Fatoração LU
+
+Sistema de Equações
+2x + 3y - z = 5
+4x + 4y - 3z = 3
+2x -3y + z = -1
+
+Resposta: x = 1; y = 2; z = 3
+
+- Método Gauss Jacobi e Seidel - Iterativo
+10x +2y + z = 7
+x + 5y + z = -8
+2x + 3y + 10z = 6
+
+x0 = 0.5; y0= -1; z0 = 0.5; estimativas iniciais
+
+S = {1, -2, 1}
+
+- Mínimos Quadrados = g = Fi * Teta; Eq. Reta e Eq Parábola (Ajuste de Curva)
+Teta = [Fi\^T * Fi]\^-1 * Fi\^T * g
+
+- Método Interpolação Polinomial Lagrange
+P(x) = f(x0) * Lo(x) + f(x1) * L1(x) + f(x2) * L2(x)
+x       -1  0   2
+f(x)    4   1   -1
+P(x) = f(x0) * L0(x) + f(x1) * L1(x) + f(x2) * L2(x)
+L0(x0) = (x-x1) (x-x2) / (x0 - x1) (x0-x2)
+Resposta: P(x) = 4[(x\^2-2x)/3] + 1[(x\^2-x-2)/-2] + (-1)[(x\^2+x)/6]
+P(1) = -2/3
+
+- Método Interpolação Polinomial Newton
+P(x) = f(x0) + (x-x0) * k1 + (x-x0) * (x-x1) * K2 + (x-x0) * ( x - x1) * (x - x2) * k3 + ( x-x0) * (x-x1) * (x-x2) x (x-x3) *k4
+x       f(x)    k1
+-1      1       1 - 1 / 0 - -1
+0       1
+1       0
+2       -1
+3       -2
+
+- Método Interpolação Polinomial Linear Newton
+P(x) = f(xo) + (x-x0) * [(f(x1) - f(x0)) / (x1-x0)]
+
+x       2       2,5     4
+f(x)    0,5     0,4     0,25
+
+f(2,2) = ? então xk E [xo;x1]; xk E [2;2,5]
+Resposta: P(2,2) = f(2,2) = 0,46
+
+******************************************* 
+Exercício Lagrange 2 Grau (https://www.youtube.com/watch?v=Y9sa2S-ljX8)
+P(x) = f(x0)*Lo(x) + f(x1)*L1(x) + f(x2)*L2(x)
+
+(-2; 2), (0;-2), (4;1)
+
+Resposta: P(x) = 11x\^2\24 - 13x\12 - 2
+
+Resolução: https://www.youtube.com/watch?v=uJOv3QSr_fo
+1. Sistemas Lineares (1o Grau e 2 Grau)
+2. Lagrange (1o Grau e 2 Grau)
+3. Newton (1Grau e 2 Grau)
+
+x       -1  0    2
+f(x)     4  1   -1
+
+P(x) = a0 + a1x + a2x\^2
+P(x) = 1 - (7/3)x + (2/3) x\^2
+P(1) = ?? -0,66667
+
+*************************************************************************
+Exercícios:
+
+https://www.tudoengcivil.com.br
+
+Plano de Ensino - Cálculo Numérico - C.H.: 60h; 20 aulas de 3h (20 dias)
+20 dias (5 meses)
+
+-- Aula: 1 (Apresentação, Plano de Curso, Introdução) + Sist. de Numeração-07/08/18
+
+-- Aula: 2 + Exercícios - 14/08/18
+1. Sistema de Numeração
+1.1. Conversão de Base: Decimal, Binário, Octal, Hexadecimal
+1.2. Operações Aritméticas Binária (Postar material didático no Github)
+
+-- Aula: 3 + Exercícios - 21/08/18
+2. Teoria dos Erros - Aritmética de Ponto Flutuante
+2.1. Representação Numérica
+2.2. Arredondamento e Truncamento
+2.3. Overflow e Underflow - SPF (Sistema de Ponto Flutuante) com máquina que opera por arredondamento
+2.4. Palavra de 16 bits
+
+3. Teoria dos Erros - Continuação...
+3.1. Tipos de Erros - Erro Absoluto e Relativo
+
+-- Aula: 4 + Exercícios - 28/08/18
+3.2. Máximo Erro Relativo de Arredondamento (Propagação de erro)
+(Análise de Erros nas Operações Aritméticas de Ponto Flutuante)
+
+4. Zeros de Função (Isolamento das Raízes)
+4.1. Determinação do Intervalo que contém o zero da função
+4.2. Refinamento das raízes estimadas
+4.3. Método da Bissecção
+4.4. Método da Falsa Posição
+4.5. Método de Ponto Fixo
+4.5.1. Método de Ponto Fixo: Convergência e Divergência
+
+-- Aula: 5 + Exercícios - 04/09/18
+4.6. Método Newton-Raphson
+4.7. Método da Secante
+4.8. Comparação entre os métodos
+[???] 4.9. Estudo Especial de Equações Polinomiais
+
+-- Aula: 6 + Exercícios - 11/09/18
+5. Sistemas Lineares - Métodos Diretos
+5.1. Método de Gauss - Escalonamento
+5.2. Método da Pivotação
+5.3. Método de Jordan
+
+-- Aula: 07 - Revisão + Exercícios - 18/09/18
+
+-- Aula: 08 - Revisão + Exercícios - 25/09/18
+-- Aula: 09 - Revisão + Exercícios - 02/10/18
+-- Aula: 10 - Dia Avaliação P1     - 09/10/18
+
+-- Aula: 11 + Exercícios - 16/10/18
+   Correção da P1
+5. Sistemas Lineares - Métodos Diretos
+5.3. Método da Fatoração LU
+
+-- Sistemas Lineares - Métodos Iterativos
+5.4. Método de Gauss-Jacobi
+5.5. Método de Gauss-Seidel
+5.6. Comparação Entre os Métodos
+[Talvez] 5.7. Método dos Mínimos Quadrados: Polinômio do 1 e 2 Grau. Eq da Reta e Parábola
+
+-- Aula: 12 + Exercícios - 23/10/18
+Ajuste de Curvas
+6. Interpolação Polinomial
+6.1. Definição e Interpretação Geométrica. 
+6.2. Interpolação polinomial (Linear e Quadrática)
+6.3. Resolução de Sistema Linear
+6.4. Forma Lagrange
+6.5. Forma de Newton
+
+-- Aula: 13 + Exercícios - 30/10/18
+6.6. Interpolação Inversa: Definição; Interpolação inversa linear e quadrática; estimativa de erros em problemas de interpolação inversa; 
+6.7 Fenômeno de Runge para pontos igualmente espaçados.
+[Talvez] 6.8. Funções Spline em Interpolação 
+
+-- Aula: 14 + Exercícios - 06/11/18
+7. Integração Numérica
+[Estudar] 7.1. Fórmulas de Newton-Cotes
+7.2. Regra dos Trapézios Simples
+7.3. Regra dos Trapézios Repetida
+7.4. Regra 1/3 de Simpson Simples e Repetida
+7.5. Regra de Simpson Simples e Repetida
+
+-- Aula: 15 + Exercícios - 13/11/18
+[Estudar] 7.6. Quadratura Gaussiana a dois pontos (n=2)
+7.7. Comparação entre a quadratura gaussiana a dois pontos (n=2), estudo do erro por quadratura gaussiana e as fórmulas de Newton.
+
+-- Aula: 16 + Exercícios - 20/11/18 
+[???] 8. Soluções Numéricas e Equações EDO
+8.1. Problema do Valor Inicial
+8.2. Métodos de Passo Um (Ou Passo Simples)
+8.3. Métodos de Passo Múltiplo
+8.4. Solução de equações diferenciais de primeira ordem pelo método de Euler e por expansão em série de Taylor.
+
+-- Aula: 17 + Revisão P2 + Exercícios - 27/11/18
+-- Aula: 18 Avaliação P2 - 04/12/18
+-- Aula 19 + Correção P2 + Revisão Geral para a Final - 11/12/18
+
+-- Aula 20 - 18/12/18
+9. Etapas do MASP: objetivos; identificação do problema - observação, análise, plano de ação, ação, verificação e padronização; recapitulacão de todo o processo de solução do problema para trabalho futuro.
+
+10.1. Equações de Ordem Superior
+10.2. Problema de Valor de Contorno - O método das diferenças finitas
+10.3. Aproximações por diferença-quociente para derivadas de qualquer ordem; 
+10.4. Transformações de equações diferenciais em problemas lineares. 
+
+**************************************************
+
+O cálculo numérico consiste de métodos numéricos para obtenção de soluções aproximadas de problemas: álgebra linear e não linear, cálculo diferencial, estatística, integral e outros modelos matemáticos.
+
+O Cálculo Numérico consiste na obtenção de soluções aproximadas de problemas de Álgebra Linear e Não-Linear, Estatística e Análise de Dados, Cálculo Diferencial e Integral e outros métodos matemáticos, utilizando métodos numéricos. Com a popularização de computadores de baixo custo e de alta capacidade de processamento, praticamente todas as atividades de Engenharia tem feito uso cada vez mais intensivo dos métodos e técnicas computacionais na resolução de problemas reais, para os quais as soluções manuais são impraticáveis e/ou imprecisas. Desta forma, o uso do computador como ferramenta de trabalho de cálculo numérico requer o entendimento dos seus princípios de operação e de como eles interferem nos resultados obtidos. Geralmente, é aceito como verdade que computadores não erram e que são os usuários é que cometem enganos que levam ao mal funcionamento do computador. Na realidade, o computador, como dispositivo de cálculo numérico, “comete” erros devido às suas características intrínsecas e o papel do usuário é quantificar esses erros e encontrar formas de, se não eliminá-los, pelo menos minimizá-los.
+
+Exercício: 14/08/2018
+
+ 9 = (1001)2; 3 = (11)2; 6 = (110)2
++9 -3 =  (110)2; 
+-9 +3 = -(110)2;  (1010)  em complemento de 2; (11111010) 8 bits
++9 +3 =  (1100)2;
+-9 -3 = -(1100)2; (10100) em complemento de 2; (11110100) 8 bits
+
++9 -6 =  (11)2;
+-9 +6 = -(11)2; (1101) em complemento de 2; (11111101) 8 bits
++9 +6 =  (1111)2;
+-9 -6 = -(1111)2; (10001) em complemento de 2; (11110001) 8 bits
+
+ 55 = (110111); 32 = (100000)
+ 55 - 32 = 23 => (010111)2
+-55 + 32 = (101001) em Complemento de 2; (11101001) 8 bits
+
+ 23 = (10111); 11 = (1011)
+ 23 - 11 = 12 => (1100)2
+-23 + 11 = (110100) em complemento de 2; (11110100) 8 bits
+
+Exercícios:
+Ex1: (AC + BD + 85)B16 = 1EE B16; 494 Base 10; 0001 1111 1111 Base 2
+Ex2: (DF + A5 + EB + 17)B16= 286 B16; 646 Base 10; 0010 1000 0110 Base 2
+
+(89 + 78) Base8 = (Erro, não existe na base octal)
+Ex1: (46 + 76 + 47) B8 = 213 Base 8; 139 Base 10; 010 001 011 Base 2
+Ex2: (45 + 37 + 26 + 77) B8 = 231 Base 8; 153 Base 10; 010 011 001 Base 2
+
+
+Erro Relativo e Erro Absoluto
+Queremos saber quanto é a estimativa de distância de uma árvore para outra, seguindo passos largos podemos perceber que a distância entre elas é de 18 metros– esse é o valor experimental.
+
+Em seguida, você realiza uma medição com uma fita métrica, mede a mesma distância e descobre que, na verdade, elas estão a 20 metros de distância uma da outra. Esse é o valor real.
+
+O erro absoluto é 20 – 18 = 2 metros.
+
+Agora vamos descobrir o erro relativo, primeiro dividimos o erro absoluto pelo valor obtido, o resultado iremos multiplicar por 100 para obter uma porcentagem, vejamos a seguir:
+
+2÷20= 0,1 x 100= 10% erro relativo
+
+Então, nosso erro relativo será 10% do valor real.
+
+Exercício (Soma Hexadecimal)
+http://www.multicalculadora.com.br/converter-hexadecimal-para-decimal/
+C1D = 3101
+2B8 = 696
+3FF = 1023
+Resultado: 12D4 (4.820)
+
+27/08/2018
+Corrigir Aula Revisão + Exercício letra 
+
+v = 40320 e v* = 40320,042
+Resposta: 4,2 * 10\^ -2 e 7.346 * 10 \^ -6
+
+
